@@ -12,9 +12,10 @@ LABEL com.redhat.component="jenkins-slave-phantomjs-rhel7-docker" \
       io.k8s.description="The jenkins phantomjs maven image has the maven tools on top of the jenkins slave base image." \
       io.openshift.tags="openshift,jenkins,slave,maven,phantomjs"
 
+USER root
+
 # Install Maven
 RUN yum install -y bzip2 && \
-    yum clean all -y && \
-    mkdir -p $HOME/.m2
+    yum clean all -y
 
 USER 1001
