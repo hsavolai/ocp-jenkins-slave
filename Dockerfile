@@ -4,7 +4,7 @@ MAINTAINER Harri Savolainen <harri.savolainen@gmail.com>
 
 # Labels consumed by Red Hat build service
 LABEL com.redhat.component="jenkins-slave-phantomjs-rhel7-docker" \
-      name="openshift3/jenkins-slave-maven-rhel7" \
+      name="openshift3/jenkins-slave-phantomjs-rhel7" \
       version="3.4" \
       architecture="x86_64" \
       release="4" \
